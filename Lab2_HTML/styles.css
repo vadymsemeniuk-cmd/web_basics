@@ -1,0 +1,43 @@
+body {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  margin: 40px;
+  background-color: #fafafa;
+  color: #111;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+p, ul {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #003366;
+}
+
+img {
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
