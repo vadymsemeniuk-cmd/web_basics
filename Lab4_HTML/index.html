@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лаб. №4: HTML-форми та зображення</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      line-height: 1.5;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+    div {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 100px;
+    }
+    .checkbox-group label,
+    .radio-group label {
+      font-weight: normal;
+      display: inline;
+      margin-right: 15px;
+    }
+    .checkbox-group, .radio-group {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 8px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    /* Адаптивне зображення */
+    picture img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Моя перша HTML-форма</h1>
+
+  <!-- Форма з методом GET (для перевірки можна змінити на POST та action на https://httpbin.org/post) -->
+  <form action="https://httpbin.org/get" method="GET">
+    
+    <!-- Спосіб 1: використання id -->
+    <div>
+      <label for="name-input">Ім'я:</label>
+      <input type="text" id="name-input" name="user_name" required>
+    </div>
+
+    <div>
+      <label for="date-input">Дата народження:</label>
+      <input type="date" id="date-input" name="user_birthdate" required>
+    </div>
+
+    <!-- Спосіб 2: пряме огортання input тегом label -->
+    <div>
+      <label>
+        Імейл:
+        <input type="email" name="user_email" required>
+      </label>
+    </div>
+
+    <div>
+      <label for="msg-input">Повідомлення:</label>
+      <textarea id="msg-input" name="user_message"></textarea>
+    </div>
+
+    <!-- Додаткові групи: чекбокси та радіокнопки -->
+    <div class="checkbox-group">
+      <label>Ваші улюблені напої?</label>
+      <input type="checkbox" id="drink1" name="drink_coffee" value="coffee">
+      <label for="drink1">Кава</label>
+      
+      <input type="checkbox" id="drink2" name="drink_tea" value="tea">
+      <label for="drink2">Чай</label>
+      
+      <input type="checkbox" id="drink3" name="drink_juice" value="juice">
+      <label for="drink3">Сік</label>
+      
+      <input type="checkbox" id="drink4" name="drink_water" value="water">
+      <label for="drink4">Вода</label>
+    </div>
+
+    <div class="radio-group">
+      <label>Моя національність:</label>
+      <input type="radio" id="nat1" name="nationality" value="ukrainian" checked>
+      <label for="nat1">Українець</label>
+
+      <input type="radio" id="nat2" name="nationality" value="european">
+      <label for="nat2">Європеєць</label>
+
+      <input type="radio" id="nat3" name="nationality" value="other">
+      <label for="nat3">Інша</label>
+    </div>
+
+    <div>
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити</button>
+    </div>
+
+  </form>
+
+  <!-- Адаптивне зображення через тег picture (< 468px мобільна версія, інакше десктоп) -->
+  <h2>Демонстрація адаптивного зображення</h2>
+  <picture>
+    <source media="(max-width: 468px)" srcset="https://picsum.photos/300/500">
+    <img src="https://picsum.photos/1000/400" alt="Адаптивний банер Picsum">
+  </picture>
+
+</body>
+</html>
