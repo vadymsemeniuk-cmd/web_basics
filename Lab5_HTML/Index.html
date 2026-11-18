@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №5: селектори</title>
+    <!-- Зверніть увагу на шлях до стилів: папка styles, а всередині style.css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Пункт 1 та 5: Заголовок з id та класом -->
+    <h1 id="top-header" class="main-title">Лабораторна робота №5: селектори</h1>
+    
+    <!-- Пункт 10: Перший довгий абзац із класом bold (жирний шрифт) -->
+    <p class="bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <!-- Пункт 9 та 12: Другий довгий абзац (має синю рамку, вирівнювання праворуч, 20px) -->
+    <p class="special-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <a href="link.html">eiusmod tempor</a> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <h2>Наші переваги</h2>
+    <ul>
+        <li>Перевага 1</li>
+        <li>Перевага 2
+            <!-- Пункт 8: Вкладений список другого рівня (буде UPPERCASE) -->
+            <ul>
+                <li>Підпункт 2.1</li>
+                <li>Підпункт 2.2</li>
+            </ul>
+        </li>
+        <li>Перевага 3</li>
+    </ul>
+
+    <h2>Наші цілі</h2>
+    <!-- Пункт 2: Список цілей із класом -->
+    <ol class="goals-list">
+        <!-- Пункт 3: Пункти цілей із жовтим фоном та курсивом -->
+        <li class="list__item">Ціль 1</li>
+        <li class="list__item">Ціль 2</li>
+        <!-- Пункт 10 та 11: Останні два пункти з класом bold (жирні + заглавні) -->
+        <li class="list__item bold">Ціль 3</li>
+        <li class="list__item bold">А це ціль 4</li>
+    </ol>
+
+    <h2>Завантажити файли</h2>
+    <!-- Пункт 4: Впорядкований список автоматично отримає червону рамку -->
+    <ol>
+        <!-- Пункт 6: Посилання на PDF-документи (зелені та курсив) -->
+        <li><a href="file1.pdf">Файл для завантаження 1</a></li>
+        <li><a href="file2.pdf">Файл для завантаження 2</a></li>
+        <li><a href="file3.docx">Файл для завантаження 3</a></li>
+        <li><a href="file4.docx">Файл для завантаження 4</a></li>
+        <li><a href="file5.pdf">Файл для завантаження 5</a></li>
+    </ol>
+
+    <!-- Пункт 12: Передостанній абзац (отримає синю рамку, вирівнювання праворуч, 20px) -->
+    <p class="special-paragraph">Написати <a href="mailto:student@student.uzhnu.edu.ua">нам листа</a></p>
+    
+    <p>За посиланням нижче ви можете переглянути <strong>відомості про нашу компанію:</strong></p>
+    
+    <a href="about.html">Про нас</a>
+
+</body>
+</html>
