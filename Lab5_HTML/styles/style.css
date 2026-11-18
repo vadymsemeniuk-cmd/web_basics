@@ -52,8 +52,8 @@ p a {
     font-weight: bold;
 }
 
-/* 11. Для всіх тегів li з класом bold встановити всі заглавні літери */
-்கli.bold {
+/* 11. Для всіх тегів li з класом bold встановити заглавні літери */
+li.bold {
     text-transform: uppercase;
 }
 
